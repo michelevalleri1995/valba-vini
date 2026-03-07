@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Valba Vini — Contatti</title>
+	<meta name="description" content="Contatta Valba Vini: telefono, email, indirizzo a Cenate Sopra (BG). Prenota una degustazione o richiedi informazioni sui nostri vini e olio EVO.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+
+<header id="site-header" class="site-header" role="banner">
+	<div class="header-inner">
+		<a href="index.html" class="site-logo" rel="home">
+		<img src="assets/images/logo-valba.png" alt="Valba Vini — Azienda Agricola" class="site-logo__img">
+	</a>
+		<nav class="main-nav" aria-label="Menu principale">
+			<ul class="nav-list">
+				<li><a href="azienda.html">Azienda</a></li>
+				<li><a href="la-terra.html">La Terra</a></li>
+				<li><a href="index.html#i-vini">I Vini</a></li>
+				<li><a href="index.html#olio">Olio</a></li>
+				<li><a href="visite-degustazioni.html">Visite e Degustazioni</a></li>
+				<li><a href="contatti.html">Contatti</a></li>
+			</ul>
+			<a href="tel:+393480404915" class="header-cta">Chiama Subito</a>
+		</nav>
+		<div class="header-actions">
+			<div class="lang-switcher" role="group" aria-label="Selezione lingua">
+				<span class="lang-current">IT</span>
+				<ul class="lang-list">
+					<li><a href="#" hreflang="it" class="active" aria-current="true">IT</a></li>
+					<li><a href="#" hreflang="en">EN</a></li>
+					<li><a href="#" hreflang="de">DE</a></li>
+					<li><a href="#" hreflang="es">ES</a></li>
+				</ul>
+			</div>
+			<button type="button" class="hamburger" aria-expanded="false" aria-controls="main-nav" aria-label="Apri menu">
+				<span class="hamburger-line"></span>
+				<span class="hamburger-line"></span>
+				<span class="hamburger-line"></span>
+			</button>
+		</div>
+	</div>
+</header>
+<div class="header-spacer"></div>
+
+<main class="page-contatti">
+	<section class="page-hero">
+		<div class="page-hero__content">
+			<span class="section-eyebrow">Siamo qui per te</span>
+			<h1>Contattaci</h1>
+			<p>Scrivici per informazioni sui nostri vini, per acquisti o per prenotare una visita in cantina.</p>
+		</div>
+	</section>
+	<section class="contatti-main">
+		<div class="contatti-main__container">
+			<div class="contatti-form-wrap">
+				<h2>Scrivici un Messaggio</h2>
+				<p class="contatti-form-wrap__desc">Rispondiamo entro 24 ore. Per urgenze chiamaci direttamente.</p>
+				<form class="contatti-form" id="contattiForm" method="post" action="#" novalidate>
+					<div class="form-group">
+						<label for="contatti-nome">Nome e Cognome *</label>
+						<input type="text" id="contatti-nome" name="nome" placeholder="Mario Rossi" required>
+					</div>
+					<div class="form-group">
+						<label for="contatti-email">Email *</label>
+						<input type="email" id="contatti-email" name="email" placeholder="mario@email.it" required>
+					</div>
+					<div class="form-group">
+						<label for="contatti-telefono">Telefono</label>
+						<input type="tel" id="contatti-telefono" name="telefono" placeholder="+39 000 000 0000">
+					</div>
+					<div class="form-group">
+						<label for="contatti-oggetto">Oggetto *</label>
+						<select id="contatti-oggetto" name="oggetto" required>
+							<option value="" disabled selected>Seleziona un argomento</option>
+							<option value="acquisto">Acquisto vini</option>
+							<option value="degustazione">Prenotazione degustazione</option>
+							<option value="visita">Visita in cantina</option>
+							<option value="olio">Informazioni olio EVO</option>
+							<option value="altro">Altro</option>
+						</select>
+					</div>
+					<div class="form-group form-group--full">
+						<label for="contatti-messaggio">Messaggio *</label>
+						<textarea id="contatti-messaggio" name="messaggio" rows="6" placeholder="Scrivi qui il tuo messaggio..." required></textarea>
+					</div>
+					<div class="form-group form-group--full">
+						<label class="form-checkbox">
+							<input type="checkbox" name="privacy" required>
+							<span>Ho letto e accetto la <a href="privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a></span>
+						</label>
+					</div>
+					<div class="form-group form-group--full">
+						<button type="submit" class="btn btn--primary btn--lg btn--full">Invia Messaggio →</button>
+					</div>
+					<div class="form-success" id="formSuccess" style="display:none;" role="status">
+						<span aria-hidden="true">✅</span>
+						<p>Messaggio inviato! Ti risponderemo entro 24 ore.</p>
+					</div>
+				</form>
+			</div>
+			<div class="contatti-info">
+				<div class="contatti-info__card">
+					<h3>Dove Siamo</h3>
+					<div class="contatti-info__item">
+						<span class="contatti-info__icon">📍</span>
+						<div>
+							<strong>Indirizzo</strong>
+							<p>Via Lazzarino, 11<br>24060 Cenate Sopra (BG)</p>
+						</div>
+					</div>
+					<div class="contatti-info__item">
+						<span class="contatti-info__icon">📞</span>
+						<div>
+							<strong>Telefono</strong>
+							<p><a href="tel:+393480404915">+39 348 040 4915</a></p>
+						</div>
+					</div>
+					<div class="contatti-info__item">
+						<span class="contatti-info__icon">✉️</span>
+						<div>
+							<strong>Email</strong>
+							<p><a href="mailto:lm.valba@gmail.com">lm.valba@gmail.com</a></p>
+						</div>
+					</div>
+					<div class="contatti-info__item">
+						<span class="contatti-info__icon">🏢</span>
+						<div>
+							<strong>P.IVA</strong>
+							<p>03112320167</p>
+						</div>
+					</div>
+				</div>
+				<div class="contatti-info__orari">
+					<h3>Orari Visite</h3>
+					<div class="orari-table">
+						<div class="orari-row"><span>Lunedì — Venerdì</span><span>Su appuntamento</span></div>
+						<div class="orari-row"><span>Sabato</span><span>10:00 — 18:00</span></div>
+						<div class="orari-row"><span>Domenica</span><span>Su appuntamento</span></div>
+					</div>
+					<a href="visite-degustazioni.html" class="btn btn--outline" style="margin-top:1.5rem; display:block; text-align:center">Prenota una Degustazione</a>
+				</div>
+				<div class="contatti-info__map">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.4!2d9.8271!3d45.7089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781485f3c5d9b1d%3A0x0!2sCenate%20Sopra%2C%20BG!5e0!3m2!1sit!2sit!4v1"
+						width="100%"
+						height="400"
+						style="border:0; border-radius:8px;"
+						allowfullscreen=""
+						loading="lazy"
+						title="Mappa Valba Vini - Cenate Sopra">
+					</iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="call-strip">
+		<div class="call-strip__container">
+			<div class="call-strip__text">
+				<h3>Preferisci chiamare?</h3>
+				<p>Siamo disponibili per rispondere a tutte le tue domande.</p>
+			</div>
+			<a href="tel:+393480404915" class="btn btn--primary btn--lg">📞 +39 348 040 4915</a>
+		</div>
+	</section>
+</main>
+
+<footer class="site-footer">
+	<div class="site-footer__main">
+		<div class="site-footer__brand">
+			<a href="index.html" class="site-footer__logo">Valba Vini</a>
+			<p class="site-footer__tagline">Azienda Agricola · Cenate Sopra, Bergamo</p>
+			<p class="site-footer__desc">Ai piedi del Monte Misma, a 400 metri di altitudine, coltiviamo vini di piacevole armonia e dal corpo intenso.</p>
+			<div class="site-footer__social">
+				<a href="#" aria-label="Instagram" class="site-footer__social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg></a>
+				<a href="#" aria-label="Facebook" class="site-footer__social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+			</div>
+		</div>
+		<div class="site-footer__nav">
+			<h4>Naviga</h4>
+			<ul>
+				<li><a href="azienda.html">Azienda</a></li>
+				<li><a href="la-terra.html">La Terra</a></li>
+				<li><a href="index.html#i-vini">I Vini</a></li>
+				<li><a href="index.html#olio">Olio EVO</a></li>
+				<li><a href="visite-degustazioni.html">Visite e Degustazioni</a></li>
+				<li><a href="contatti.html">Contatti</a></li>
+			</ul>
+		</div>
+		<div class="site-footer__contact">
+			<h4>Contatti</h4>
+			<address>
+				<p>Via Lazzarino, 11<br>24060 Cenate Sopra (BG)</p>
+				<p><a href="tel:+393480404915">+39 348 040 4915</a></p>
+				<p><a href="mailto:lm.valba@gmail.com">lm.valba@gmail.com</a></p>
+				<p>P.IVA 03112320167</p>
+			</address>
+			<a href="tel:+393480404915" class="btn btn--outline btn--sm">Chiama Subito</a>
+		</div>
+	</div>
+	<div class="site-footer__bottom">
+		<div class="site-footer__bottom-inner">
+			<p>© 2026 Valba Azienda Agricola — Tutti i diritti riservati</p>
+			<ul class="site-footer__legal">
+				<li><a href="privacy-policy.html">Privacy Policy</a></li>
+				<li><a href="cookie-policy.html">Cookie Policy</a></li>
+				<li><a href="informazioni.html">Informazioni</a></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

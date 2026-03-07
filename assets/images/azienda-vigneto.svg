@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="azienda" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1C1410"/>
+      <stop offset="100%" style="stop-color:#5a2a1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#azienda)"/>
+  <g text-anchor="middle" dominant-baseline="middle">
+    <text x="400" y="290" style="font-family: Georgia, serif; font-size: 36px; fill: #fff;"><? Foto Azienda</text>
+    <text x="400" y="340" style="font-family: Georgia, serif; font-size: 16px; fill: #C9A96E;">Vigneto Valba  Cenate Sopra</text>
+  </g>
+</svg>

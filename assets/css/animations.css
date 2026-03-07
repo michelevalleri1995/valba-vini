@@ -1,0 +1,88 @@
+/**
+ * Valba Vini – Animazioni
+ * Usare con le classi o per stati hover/focus
+ */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scrollLine {
+  0% {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  50% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+  51% {
+    transform: scaleY(1);
+    transform-origin: bottom;
+  }
+  100% {
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Delay progressivi per Valori */
+.values__item.reveal.visible:nth-child(1) { transition-delay: 0s; }
+.values__item.reveal.visible:nth-child(2) { transition-delay: 0.1s; }
+.values__item.reveal.visible:nth-child(3) { transition-delay: 0.2s; }
+
+/* Delay progressivi per Wine cards */
+.wine-card.reveal.visible:nth-child(1) { transition-delay: 0s; }
+.wine-card.reveal.visible:nth-child(2) { transition-delay: 0.05s; }
+.wine-card.reveal.visible:nth-child(3) { transition-delay: 0.1s; }
+.wine-card.reveal.visible:nth-child(4) { transition-delay: 0.15s; }
+.wine-card.reveal.visible:nth-child(5) { transition-delay: 0.2s; }
+.wine-card.reveal.visible:nth-child(6) { transition-delay: 0.25s; }
+
+/* Delay per Visite features */
+.visits__feature.reveal.visible:nth-child(1) { transition-delay: 0s; }
+.visits__feature.reveal.visible:nth-child(2) { transition-delay: 0.1s; }
+.visits__feature.reveal.visible:nth-child(3) { transition-delay: 0.2s; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .site-main article {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .site-main article:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+  }
+
+  a {
+    transition: color 0.3s ease, opacity 0.3s ease;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

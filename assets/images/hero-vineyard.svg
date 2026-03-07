@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="hero" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1C1410"/>
+      <stop offset="100%" style="stop-color:#7B1D1D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#hero)"/>
+  <g text-anchor="middle" dominant-baseline="middle">
+    <text x="960" y="520" style="font-family: Georgia, 'Playfair Display', serif; font-size: 48px; fill: #fff;"><w Foto Vigneto</text>
+    <text x="960" y="580" style="font-family: Georgia, serif; font-size: 20px; fill: #C9A96E;">Cenate Sopra  Monte Misma</text>
+  </g>
+</svg>

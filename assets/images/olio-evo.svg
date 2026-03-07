@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800">
+  <defs>
+    <linearGradient id="olio" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3d3510"/>
+      <stop offset="100%" style="stop-color:#6b5a20"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="800" fill="url(#olio)"/>
+  <g text-anchor="middle" dominant-baseline="middle">
+    <text x="300" y="380" style="font-family: Georgia, serif; font-size: 36px; fill: #fff;">>Ò Foto Olio EVO</text>
+    <text x="300" y="430" style="font-family: Georgia, serif; font-size: 18px; fill: #C9A96E;">Extravergine Valba</text>
+  </g>
+</svg>
